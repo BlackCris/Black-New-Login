@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zindan</title>
+        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!-- 移除了错误的 <link rel="stylesheet" href="server.js"> -->
+    </head>
+<body>
+    <div class="text-wrapper">Register</div>
+    <!-- 更新了 action 属性 -->
+    <form action="/register" method="post">
+        <div class="input-top">
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-unlock"></i>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-unlock"></i>
+                <!-- 更正了 name 属性 -->
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+            </div>
+            <div class="login-button">
+                <button type="submit">Register</button>
+            </div>
+        </div>
+    </form>
+    
+
+    <div class="button-group-one">
+        <div class="button-google">
+            <a href="https://www.google.com"><button type="submit"><img src="./image/google.png" alt="Google Logo"> Login with <b>Google</b></button></a>
+        </div>
+        <div class="button-facebook">
+            <a href="https://www.facebook.com"> <button type="submit"><img src="./image/facebook.png" alt="Facebook Logo"> Login with <b>Facebook</b></button></a>
+        </div>
+    </div>
+    <div class="right-image-one">
+        <img src="./image/rectangle-5.png" alt="Baobao">
+    </div>
+</body>
+</html>
